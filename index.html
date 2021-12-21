@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        function show() {
+            var fn1;
+            var fn2;
+            var fn3;
+            fn1 = document.getElementById("rol1").value;
+            fn2 = document.getElementById("rol2").value;
+            fn3 = document.getElementById("rol3").value;
+            document.getElementById("sadt").innerHTML = "SADT";
+            document.getElementById("test").innerHTML = fn1;
+            document.getElementById("test2").innerHTML = fn2;
+            document.getElementById("test3").innerHTML = fn3;
+
+            var comp1;
+            var comp2;
+            var comp3;
+            comp1 = document.getElementById("cp1").value;
+            comp2 = document.getElementById("cp2").value;
+            comp3 = document.getElementById("cp3").value;
+            document.getElementById("c1").innerHTML = comp1;
+            document.getElementById("c2").innerHTML = comp2;
+            document.getElementById("c3").innerHTML = comp3;
+
+            var inp;
+            inp = document.getElementById("inPrin").value;
+            document.getElementById("mainIn").innerHTML = "<br>" + "<br>" + "<br>" +"<br>" + "<br>" + "<br>" + "<br>" + "<br>" + "<br>" + "<br>" + "<br>" + "<br>" + inp;
+
+            var s1;
+            var s2;
+            var s3;
+            // var s;
+
+            // s = document.getElementById("out").value;
+            s1 = document.getElementById("out1").value;
+            s2 = document.getElementById("out2").value;
+            s3 = document.getElementById("out").value;
+
+            document.getElementById("inp1").innerHTML = s1;
+            document.getElementById("inp2").innerHTML = s2;
+            document.getElementById("mainOut").innerHTML = "<br>" + "<br>" + "<br>" + "<br>" + "<br>" + "<br>" +"<br>" + "<br>" + "<br>" + "<br>" + "<br>" + "<br>" +s3;
+            // document.getElementById("mainOut").innerHTML = s;
+
+            document.getElementById("reglage").innerHTML = "We";
+            document.getElementById("pro").innerHTML = "Programme";
+            document.getElementById("mem").innerHTML = "Mise en marche";
+            document.getElementById("we").innerHTML = "Réglage";
+
+
+            document.getElementById("inds2").innerHTML = "Bruit";
+            document.getElementById("inds").innerHTML = "Chaleur";
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Les données du système : </h1>
+        <hr>
+        <div class="card-deck">
+            <div class="card border-primary mb-3" style="max-width: 30rem;">
+                <div class="card-header">
+                    <h2>Les rôles :</h2>
+                </div>
+                <div class="card-body text-primary">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Rôle 1</label>
+                                    <input type="text" class="form-control" placeholder="Saisir le rôle" id="rol1">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Rôle 2</label>
+                                    <input type="text" class="form-control" placeholder="Saisir le rôle" id="rol2">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Rôle 3</label>
+                                    <input type="text" class="form-control" placeholder="Saisir le rôle" id="rol3">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="card border-primary mb-3" style="max-width: 30rem;">
+                <div class="card-header">
+                    <h2>Les composants :</h2>
+                </div>
+                <div class="card-body text-primary">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Composant 1</label>
+                                    <input type="text" class="form-control" placeholder="Saisr le composant" id="cp1">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Composant 2</label>
+                                    <input type="text" class="form-control" placeholder="Saisr le composant" id="cp2">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Composant 3</label>
+                                    <input type="text" class="form-control" placeholder="Saisr le composant" id="cp3">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card border-primary mb-3" style="max-width: 30rem;">
+                <div class="card-header">
+                    <h2>Les entrées :</h2>
+                </div>
+                <div class="card-body text-primary">
+                    <form>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Entrée principale</label>
+                                <input type="text" class="form-control" placeholder="Ecrire..." id="inPrin">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <input class="form-check-input" type="checkbox" value="" id="check1">
+                                <label class="form-check-label" for="check1">Réglage</label>
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-check-input" type="checkbox" value="" id="check2">
+                                <label class="form-check-label" for="check1">Programme</label>
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-check-input" type="checkbox" value="" id="check3">
+                                <label class="form-check-label" for="check1">We</label>
+                            </div>
+                            <div class="col-md-12">
+                                <input class="form-check-input" type="checkbox" value="" id="check4">
+                                <label class="form-check-label" for="check1">Mise en marche</label>
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-check-input" type="checkbox" value="" id="check5">
+                                <label class="form-check-label" for="check1">Wp</label>
+                            </div>
+                            <div class="col-md-12">
+                                <input class="form-check-input" type="checkbox" value="" id="check6">
+                                <label class="form-check-label" for="check1">Fluide frigorifique</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="card border-primary mb-3" style="max-width: 30rem;">
+                <div class="card-header">
+                    <h2>Les sorties :</h2>
+                </div>
+                <div class="card-body text-primary">
+                    <form>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Sortie principale</label>
+                                <input type="text" class="form-control" placeholder="Ecrire..." id="out">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Sortie 1</label>
+                                <input type="text" class="form-control" placeholder="Ecrire..." id="out1">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Sortie 2</label>
+                                <input type="text" class="form-control" placeholder="Ecrire..." id="out2">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <input class="form-check-input" type="checkbox" value="" id="check7">
+                                <label class="form-check-label" for="check1">Bruit</label>
+                            </div>
+                            <div class="col-md-12">
+                                <input class="form-check-input" type="checkbox" value="" id="check8">
+                                <label class="form-check-label" for="check1">Chaleur</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+                <form>
+                    <button type="button" class="btn btn-outline-danger" onclick="show()">SADT</button>
+                </form>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-2 offset-1">
+                <h5 id="mainIn"></h5>
+                <h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                  </svg></h4>
+            </div>
+            <div class="col-md-6">
+                <div class="card border-primary md-6">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="sadt"></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="row">
+                            <div class="col-md-12"> 
+                            <span id="reglage" class="bg bg-success text-light" style="font-size: small; margin: 10px;"></span>
+                            <span id="we" class="bg bg-success text-light" style="font-size: small; margin: 10px;"></span>
+                            <span id="mem" class="bg bg-success text-light" style="font-size: small;margin: 10px;"></span>
+                            <span id="pro" class="bg bg-success text-light" style="font-size: small;margin: 10px;"></span>
+                            <div>
+                                <span style="margin: 15px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z"/>
+                                  </svg>
+                                </span>
+                                <span style="margin:35px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z"/>
+                                      </svg>
+                                    </span>
+                                    <span style="margin: 35px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z"/>
+                                          </svg>
+                                        </span>
+                                        <span style="margin: 40px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z"/>
+                                              </svg>
+                                            </span>
+                            </div>
+
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="newdiv">
+                                    <span id="test" class="border border-danger" style="font-size: small;"></span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                      </svg>
+                                    <span id="inp1" style="color: green; font-size: small;"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p id="c1" class="text-primary"></p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4 offset-3">
+                                <span id="test2" class="border border-danger" style="font-size: small;"></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                  </svg>
+                                <span id="inp2" style="color: green; font-size: small;"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4 offset-3">
+                                <p id="c2" class="text-primary"></p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4 offset-6">
+                                <span id="test3" class="border border-danger" style="font-size: small;"></span>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4 offset-6">
+                                <p id="c3" class="text-primary"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h5 id="mainOut"></h5>
+                <h4><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                  </svg></h4>
+                <div id="inds"></div>
+                <div id="inds2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer class="page-footer font-small cyan darken-3">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12 py-5">
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright text-center py-3">© 2021 Copyright: Lina Bousbih
+    </div>
+</footer>
+</html>
